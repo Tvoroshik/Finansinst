@@ -1,1 +1,2 @@
-### finansinst
+### Finansins_app
+## Init Djanog
