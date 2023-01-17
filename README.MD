@@ -1,2 +1,3 @@
-### Finansins_app
-## Init Djanog
+### Finance manager react
+## UI часть сервиса Finance manager
+
