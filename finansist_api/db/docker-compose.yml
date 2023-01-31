@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+finansist_app_postgres:
+  container_name: finansist_app
+  image: postgres
+  environment: 
+   POSTGRES-USER: "finansist_user"
+   POSTGRES_PASSWORD: "finansist123"
+   PGDATA: /data/finansist_app_postgres
+  volumes:
+    - finansist_app_postgres:/data/finansist_app_postgres
+  ports:
+    - "5434:5432"
+  networks:
+    - finansist_app_net
+  restart: unless-stopped
+
+networks:
+  finansist_app_net:
+  driver: bridge
+
+volumes:
+  finansist_app_postgres:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
